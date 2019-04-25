@@ -1,5 +1,6 @@
 <template>
   <div>
+    <scoll-view></scoll-view>
     <i-panel title="布局">
       <i-cell-group>
         <i-cell title="Layout 栅格布局" is-link="true" url="/pages/layout/main"></i-cell>
@@ -11,21 +12,21 @@
     </i-panel>
     <i-panel title="基础组件">
       <i-cell-group>
-        <i-cell title="Button 按钮" is-link="true" url="/pages/button/index"></i-cell>
-        <i-cell title="Color 色彩" is-link="true" url="/pages/color/index"></i-cell>
-        <i-cell title="Icon 图标" is-link="true" url="/pages/icon/index"></i-cell>
+        <i-cell title="Button 按钮" is-link="true" url="/pages/button/main"></i-cell>
+        <i-cell title="Color 色彩" is-link="true" url="/pages/color/main"></i-cell>
+        <i-cell title="Icon 图标" is-link="true" url="/pages/icon/main"></i-cell>
       </i-cell-group>
     </i-panel>
     <i-panel title="导航">
       <i-cell-group>
-        <i-cell title="TabBar 标签栏" is-link="true" url="/pages/tab-bar/index"></i-cell>
-        <i-cell title="Tabs 标签页" is-link="true" url="/pages/tabs/index"></i-cell>
-        <i-cell title="Drawer 抽屉" is-link="true" url="/pages/drawer/index"></i-cell>
-        <i-cell title="Page 分页" is-link="true" url="/pages/page/index"></i-cell>
-        <i-cell title="Steps 步骤条" is-link="true" url="/pages/steps/index"></i-cell>
-        <i-cell title="NoticeBar 通告栏" is-link="true" url="/pages/notice-bar/index"></i-cell>
-        <i-cell title="Index 索引选择器" is-link="true" url="/pages/index-list/index"></i-cell>
-        <i-cell title="Sticky 吸顶容器" is-link="true" url="/pages/sticky/index"></i-cell>
+        <i-cell title="TabBar 标签栏" is-link="true" url="/pages/tab-bar/main"></i-cell>
+        <i-cell title="Tabs 标签页" is-link="true" url="/pages/tabs/main"></i-cell>
+        <i-cell title="Drawer 抽屉" is-link="true" url="/pages/drawer/main"></i-cell>
+        <i-cell title="Page 分页" is-link="true" url="/pages/page/main"></i-cell>
+        <i-cell title="Steps 步骤条" is-link="true" url="/pages/steps/main"></i-cell>
+        <i-cell title="NoticeBar 通告栏" is-link="true" url="/pages/notice-bar/main"></i-cell>
+        <i-cell title="Index 索引选择器" is-link="true" url="/pages/index-list/main"></i-cell>
+        <i-cell title="Sticky 吸顶容器" is-link="true" url="/pages/sticky/main"></i-cell>
       </i-cell-group>
     </i-panel>
     <i-panel title="操作反馈">

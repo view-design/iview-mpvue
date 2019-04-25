@@ -1,5 +1,5 @@
 <template>
-  <div class="i-class i-row" v-bind:class="iClass">
+  <div class="i-row" v-bind:class="iClass">
     <slot></slot>
   </div>
 </template>

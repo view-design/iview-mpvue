@@ -1,5 +1,5 @@
 <template>
-  <div class="i-class i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}"></div>
+  <div class="i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}"></div>
 </template>
 <script>
 export default {

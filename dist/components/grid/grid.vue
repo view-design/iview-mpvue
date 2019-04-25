@@ -1,5 +1,5 @@
 <template>
-  <div class="i-class i-grid" v-bind:class="iClass">
+  <div class="i-grid" v-bind:class="iClass">
     <slot></slot>
   </div>
 </template>

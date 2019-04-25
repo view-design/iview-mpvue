@@ -27,6 +27,7 @@
   "homepage": "https://github.com/iview/iview-weapp",
   "devDependencies": {
     "autoprefixer": "^9.5.0",
+    "babel-eslint": "^10.0.1",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",

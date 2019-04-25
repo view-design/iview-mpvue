@@ -1,5 +1,5 @@
 <template>
-  <div class="i-class i-grid-item" v-bind:class="iClass" @click.stop="bindTap">
+  <div class="i-grid-item" v-bind:class="iClass" @click.stop="bindTap">
     <slot></slot>
   </div>
 </template>

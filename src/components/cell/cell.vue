@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click="handleTap" class="i-class i-cell" v-bind:class="{'i-cell-last': isLastCell, 'i-cell-access': isLink}">
+    <div @click="handleTap" class="i-class i-cell" v-bind:class="classObj">
       <div class="i-cell-icon">
         <slot name="icon"></slot>
       </div>
@@ -55,6 +55,17 @@ export default {
     isLastCell: {
       type: Boolean,
       default: false
+    },
+    iClass: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    classObj() {
+      const lastCellClass = this.isLastCell ? 'i-cell-last' : ''
+      const isLinkClass = this.isLink ? 'i-cell-access' : ''
+      return this.iClass + ' ' + lastCellClass + ' ' + isLinkClass
     }
   },
   methods: {

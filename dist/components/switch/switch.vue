@@ -1,6 +1,6 @@
 <template>
   <div
-    class="i-class i-switch"
+    class="i-switch"
     v-bind:class="classObject"
     @click.stop="toggle"
   >
@@ -35,6 +35,10 @@ export default {
     name: {
       type: String,
       default: ""
+    },
+    iClass: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -44,7 +48,7 @@ export default {
       if (this.disabled) {
         disabledClass += ' ' + 'i-switch-disabled'
       }
-      return sizeClass + ' ' + disabledClass
+      return this.iClass + ' ' + sizeClass + ' ' + disabledClass
     }
   },
   methods: {

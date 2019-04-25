@@ -1,29 +1,27 @@
 <template>
-  <div>
-    <button
-      class="i-class i-btn"
-      v-bind:class="classObject"
-      @click="handleTap"
-      v-bind:open-type="openType"
-      v-bind:app-parameter="appParameter"
-      v-bind:hover-stop-propagation="hoverStopPropagation"
-      v-bind:hover-start-time="hoverStartTime"
-      v-bind:hover-stay-time="hoverStayTime"
-      v-bind:session-from="sessionFrom"
-      v-bind:send-message-title="sendMessageTitle"
-      v-bind:send-message-path="sendMessagePath"
-      v-bind:send-message-img="sendMessageImg"
-      v-bind:show-message-card="showMessageCard"
-      @contact="bindcontact"
-      @getuserinfo="bindgetuserinfo"
-      @getphonenumber="bindgetphonenumber"
-      @error="binderror"
-      plain="true"
-    >
-      <div class="i-btn-loading-inner" v-if="loading"></div>
-      <slot></slot>
-    </button>
-  </div>
+  <button
+    class="i-btn"
+    v-bind:class="classObject"
+    @click="handleTap"
+    v-bind:open-type="openType"
+    v-bind:app-parameter="appParameter"
+    v-bind:hover-stop-propagation="hoverStopPropagation"
+    v-bind:hover-start-time="hoverStartTime"
+    v-bind:hover-stay-time="hoverStayTime"
+    v-bind:session-from="sessionFrom"
+    v-bind:send-message-title="sendMessageTitle"
+    v-bind:send-message-path="sendMessagePath"
+    v-bind:send-message-img="sendMessageImg"
+    v-bind:show-message-card="showMessageCard"
+    @contact="bindcontact"
+    @getuserinfo="bindgetuserinfo"
+    @getphonenumber="bindgetphonenumber"
+    @error="binderror"
+    plain="true"
+  >
+    <div class="i-btn-loading-inner" v-if="loading"></div>
+    <slot></slot>
+  </button>
 </template>
 
 <script>
@@ -90,10 +88,12 @@ export default {
       const btnSize = 'i-btn-' + this.size
       const btnType = 'i-btn-' + this.type
       const btnShape = 'i-btn-' + this.shape
-      const btnLong = 'i-btn-' + this.long ? 'long' : ''
-      const btnLoading = 'i-btn-' + this.loading ? 'loading' : ''
-      const className = iClass + ' ' + btnSize + ' ' + btnType + ' ' + btnShape + ' '
-        + btnLong + ' ' + btnLoading
+      const btnLong = this.long ? 'i-btn-long' : ''
+      const btnLoading = this.loading ? 'i-btn-loading' : ''
+      const btnDisabled = this.disabled ? 'i-btn-disabled' : ''
+      const btnInline = this.inline ? 'i-btn-inline' : ''
+      const className = this.iClass + ' ' + btnSize + ' ' + btnType + ' ' + btnShape + ' '
+        + btnLong + ' ' + btnLoading + ' ' + btnDisabled + ' ' + btnInline
       return className
     }
   },
