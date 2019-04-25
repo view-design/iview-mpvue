@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="i-class i-col" v-bind:class="classObject" @click.capture="handleTap">
+    <div class="i-col" v-bind:class="classObject" @click.capture="handleTap">
       <slot></slot>
     </div>
   </div>

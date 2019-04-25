@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="i-class i-panel">
+    <div class="i-panel" v-bind:class="iClass">
       <div v-if="title" class="i-panel-title" v-bind:class="{'i-panel-title-hide-top': hideTop}">{{ title }}</div>
       <div class="i-panel-content" v-bind:class="{'i-panel-without-border': hideBorder}">
         <slot></slot>
@@ -24,6 +24,10 @@ export default {
     hideBorder: {
       type: Boolean,
       default: false
+    },
+    iClass: {
+      type: String,
+      default: ''
     }
   }
 }
