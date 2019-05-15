@@ -10,7 +10,11 @@
     "pages/color/main",
     "pages/icon/main",
     "pages/tab-bar/main",
-    "pages/tabs/main"],
+    "pages/tabs/main",
+    "pages/drawer/main",
+    "pages/page/main",
+    "pages/steps/main",
+    "pages/notice-bar/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
