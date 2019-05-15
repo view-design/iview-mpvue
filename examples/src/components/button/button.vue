@@ -29,7 +29,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'primary',
+      default: '',
     },
     inline: {
       type: Boolean,
@@ -37,7 +37,7 @@ export default {
     },
     size: {
       type: String,
-      default: 'default',
+      default: '',
     },
     shape: {
       type: String,

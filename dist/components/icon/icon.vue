@@ -1,5 +1,5 @@
 <template>
-  <div class="i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}"></div>
+  <div class="i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}" @click.stop="clickHandle"></div>
 </template>
 <script>
 export default {
@@ -33,6 +33,11 @@ export default {
       return this.iClass + ' ' + iconType + ' ' + custom
     }
   },
+  methods: {
+    clickHandle() {
+      this.$emit('click')
+    }
+  }
 }
 </script>
 
