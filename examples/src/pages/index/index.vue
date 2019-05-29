@@ -31,35 +31,35 @@
     </i-panel>
     <i-panel title="操作反馈">
       <i-cell-group>
-        <i-cell title="ActionSheet 动作面板" is-link="true" url="/pages/action-sheet/index"></i-cell>
-        <i-cell title="Toast 轻提示" is-link="true" url="/pages/toast/index"></i-cell>
-        <i-cell title="Modal 对话框" is-link="true" url="/pages/modal/index"></i-cell>
-        <i-cell title="Message 全局提醒" is-link="true" url="/pages/message/index"></i-cell>
-        <i-cell title="Spin 加载中" is-link="true" url="/pages/spin/index"></i-cell>
-        <i-cell title="Swipeout 滑动菜单" is-link="true" url="/pages/swipeout/index"></i-cell>
+        <i-cell title="ActionSheet 动作面板" is-link="true" url="/pages/action-sheet/main"></i-cell>
+        <i-cell title="Toast 轻提示" is-link="true" url="/pages/toast/main"></i-cell>
+        <i-cell title="Modal 对话框" is-link="true" url="/pages/modal/main"></i-cell>
+        <i-cell title="Message 全局提醒" is-link="true" url="/pages/message/main"></i-cell>
+        <i-cell title="Spin 加载中" is-link="true" url="/pages/spin/main"></i-cell>
+        <i-cell title="Swipeout 滑动菜单" is-link="true" url="/pages/swipeout/main"></i-cell>
       </i-cell-group>
     </i-panel>
     <i-panel title="视图">
       <i-cell-group>
-        <i-cell title="Badge 徽章" is-link="true" url="/pages/badge/index"></i-cell>
-        <i-cell title="Alert 警告提示" is-link="true" url="/pages/alert/index"></i-cell>
-        <i-cell title="Tag 标签" is-link="true" url="/pages/tag/index"></i-cell>
-        <i-cell title="Progress 进度条" is-link="true" url="/pages/progress/index"></i-cell>
-        <i-cell title="Avatar 头像" is-link="true" url="/pages/avatar/index"></i-cell>
-        <i-cell title="CountDown 倒计时" is-link="true" url="/pages/count-down/index"></i-cell>
-        <i-cell title="Divider 分隔符" is-link="true" url="/pages/divider/index"></i-cell>
-        <i-cell title="Collapse 折叠面板" is-link="true" url="/pages/collapse/index"></i-cell>
-        <i-cell title="LoadMore 页底提示" is-link="true" url="/pages/load-more/index"></i-cell>
+        <i-cell title="Badge 徽章" is-link="true" url="/pages/badge/main"></i-cell>
+        <i-cell title="Alert 警告提示" is-link="true" url="/pages/alert/main"></i-cell>
+        <i-cell title="Tag 标签" is-link="true" url="/pages/tag/main"></i-cell>
+        <i-cell title="Progress 进度条" is-link="true" url="/pages/progress/main"></i-cell>
+        <i-cell title="Avatar 头像" is-link="true" url="/pages/avatar/main"></i-cell>
+        <i-cell title="CountDown 倒计时" is-link="true" url="/pages/count-down/main"></i-cell>
+        <i-cell title="Divider 分隔符" is-link="true" url="/pages/divider/main"></i-cell>
+        <i-cell title="Collapse 折叠面板" is-link="true" url="/pages/collapse/main"></i-cell>
+        <i-cell title="LoadMore 页底提示" is-link="true" url="/pages/load-more/main"></i-cell>
       </i-cell-group>
     </i-panel>
     <i-panel title="表单">
       <i-cell-group>
-        <i-cell title="Input 输入框" is-link="true" url="/pages/input/index"></i-cell>
-        <i-cell title="Radio 单选" is-link="true" url="/pages/radio/index"></i-cell>
-        <i-cell title="Checkbox 复选" is-link="true" url="/pages/checkbox/index"></i-cell>
-        <i-cell title="Switch 开关" is-link="true" url="/pages/switch/index"></i-cell>
-        <i-cell title="Rate 评分" is-link="true" url="/pages/rate/index"></i-cell>
-        <i-cell title="InputNumber 数字输入框" is-link="true" url="/pages/input-number/index"></i-cell>
+        <i-cell title="Input 输入框" is-link="true" url="/pages/input/main"></i-cell>
+        <i-cell title="Radio 单选" is-link="true" url="/pages/radio/main"></i-cell>
+        <i-cell title="Checkbox 复选" is-link="true" url="/pages/checkbox/main"></i-cell>
+        <i-cell title="Switch 开关" is-link="true" url="/pages/switch/main"></i-cell>
+        <i-cell title="Rate 评分" is-link="true" url="/pages/rate/main"></i-cell>
+        <i-cell title="InputNumber 数字输入框" is-link="true" url="/pages/input-number/main"></i-cell>
       </i-cell-group>
     </i-panel>
   </div>

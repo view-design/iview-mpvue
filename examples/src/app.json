@@ -14,7 +14,11 @@
     "pages/drawer/main",
     "pages/page/main",
     "pages/steps/main",
-    "pages/notice-bar/main"],
+    "pages/notice-bar/main",
+    "pages/index-list/main",
+    "pages/sticky/main",
+    "pages/action-sheet/main",
+    "pages/toast/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
