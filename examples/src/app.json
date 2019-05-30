@@ -19,7 +19,9 @@
     "pages/sticky/main",
     "pages/action-sheet/main",
     "pages/toast/main",
-    "pages/modal/main"],
+    "pages/modal/main",
+    "pages/message/main",
+    "pages/spin/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
