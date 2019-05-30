@@ -18,7 +18,8 @@
     "pages/index-list/main",
     "pages/sticky/main",
     "pages/action-sheet/main",
-    "pages/toast/main"],
+    "pages/toast/main",
+    "pages/modal/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
