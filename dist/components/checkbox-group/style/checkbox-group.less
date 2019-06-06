@@ -1,0 +1,24 @@
+@import '../../cell-group/style/cell-group.less';
+@import '../../cell/style/cell.less';
+
+.i-checkbox {
+  &-cell {
+    display: block !important;
+    &::after {
+      display: block;
+    }
+  }
+  &-checkbox-left {
+    float: left;
+  }
+  &-checkbox-right {
+    float: right;
+  }
+  &-radio {
+    vertical-align: middle;
+  }
+  &-title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

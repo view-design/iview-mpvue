@@ -1,5 +1,5 @@
 <template>
-  <div class="i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}" @click.stop="clickHandle"></div>
+  <div class="i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}" @click="clickHandle"></div>
 </template>
 <script>
 export default {
@@ -29,7 +29,6 @@ export default {
     classObj() {
       const iconType = this.type ? 'i-icon-' + this.type : ''
       const custom = this.custom ? this.custom : ''
-      console.log(iconType)
       return this.iClass + ' ' + iconType + ' ' + custom
     }
   },
