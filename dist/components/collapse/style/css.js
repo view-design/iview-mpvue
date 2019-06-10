@@ -1,0 +1,1 @@
+import './collapse.css'

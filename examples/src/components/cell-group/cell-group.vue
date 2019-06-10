@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <div class="i-cell-group" v-bind:class="iClass">
-      <slot></slot>
-    </div>
+  <div class="i-cell-group" :class="iClass">
+    <slot></slot>
   </div>
 </template>
 <script>

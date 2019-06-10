@@ -1,19 +1,17 @@
 <template>
-  <div>
-    <div @click="handleTap" class="i-class i-cell" v-bind:class="classObj">
-      <div class="i-cell-icon">
-        <slot name="icon"></slot>
-      </div>
-      <div class="i-cell-bd">
-        <p v-if="title" class="i-cell-text">{{ title }}</p>
-        <p v-if="label" class="i-cell-desc">{{ label }}</p>
-        <slot></slot>
-      </div>
-      <div @click.capture="navigateTo" class="i-cell-ft">
-        <div v-if="value">{{ value }}</div>
-        <div v-else>
-          <slot name="footer"></slot>
-        </div>
+  <div @click="handleTap" class="i-cell" v-bind:class="classObj">
+    <div class="i-cell-icon">
+      <slot name="icon"></slot>
+    </div>
+    <div class="i-cell-bd">
+      <p v-if="title" class="i-cell-text">{{ title }}</p>
+      <p v-if="label" class="i-cell-desc">{{ label }}</p>
+      <slot></slot>
+    </div>
+    <div @click.capture="navigateTo" class="i-cell-ft">
+      <div v-if="value">{{ value }}</div>
+      <div v-else>
+        <slot name="footer"></slot>
       </div>
     </div>
   </div>
@@ -74,6 +72,7 @@ export default {
       const url = this.url
       const type = typeof this.isLink
       this.$emit('click', evt)
+      if (!this.isLink || !url || url === 'true' || url === 'false') return
       if (type !== 'boolean' && type !== 'string') {
         console.warn('isLink 属性必须是一个字符串或者布尔值', this.isLink)
         return

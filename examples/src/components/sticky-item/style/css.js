@@ -1,0 +1,1 @@
+import './sticky-item.css'

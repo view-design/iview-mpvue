@@ -35,6 +35,9 @@
   left: 15px;
   right: 0;
 }
+.i-cell:last-child::after {
+  display: none;
+}
 .i-cell-last::after {
   display: none;
 }

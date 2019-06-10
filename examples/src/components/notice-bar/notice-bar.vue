@@ -71,10 +71,10 @@ export default {
     if (this.timer) {
       this.destroyTimer()
       if (this.loop) {
-      setTimeout(() => {
-        this.initAnimation() 
-      }, 100)
-    }
+        setTimeout(() => {
+          this.initAnimation() 
+        }, 100)
+      }
     }
   },
   computed: {
@@ -160,7 +160,6 @@ export default {
       }
     },
     handleClose() {
-      console.log(123)
       this.destroyTimer()
       this.show = false
       this.timer = null
