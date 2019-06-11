@@ -6,10 +6,11 @@
       :key="index"
       :data-index="index"
       :class="[index < value ? 'i-rate-current' : '']"
-      class="i-rate-star">
+      class="i-rate-star"
+      @click="handleClick">
       <i-icon type="collection_fill" :size="size"></i-icon>
     </div>
-    <div class="i-rate-text" v-if="value"><slot></slot></div>
+    <div class="i-rate-text" v-if="value && showText">{{value}}{{showText}}</div>
   </div>
 </template>
 <script>
@@ -41,7 +42,11 @@ export default {
     },
     iClass: {
       type: String,
-      default: 'dfsgdfg'
+      default: ''
+    },
+    showText: {
+      type: String,
+      default: ''
     }
   },
   data() {
@@ -72,8 +77,15 @@ export default {
       })
     },
     handleTouchMove(evt) {
-      if (this.disabled || evt.mp.ch) return
-      
+      if (this.disabled || !evt.mp.changedTouches[0]) return
+      const movePageX = evt.mp.changedTouches[0].pageX
+      const space = movePageX - this.touchesStart.pageX
+      if (space <= 0) {
+        return
+      }
+      let setIndex = Math.ceil(space / this.size)
+      setIndex = setIndex > this.count ? this.count : setIndex
+      this.$emit('change', {index: setIndex})
     }
   }
 }

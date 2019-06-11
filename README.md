@@ -4,9 +4,9 @@
     </a>
 </p>
 
-# iView Weapp
+# iView mpvue
 
-### 一套高质量的微信小程序 UI 组件库
+### 一套高质量的小程序 UI 组件库
 
 ## 文档
 [https://weapp.iviewui.com](https://weapp.iviewui.com)
