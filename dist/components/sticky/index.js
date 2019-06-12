@@ -1,3 +1,3 @@
-import sticky from 'sticky.vue'
+import sticky from './sticky.vue'
 
 export default sticky

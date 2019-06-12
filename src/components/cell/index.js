@@ -1,3 +1,3 @@
-import cell from 'cell.vue'
+import cell from './cell.vue'
 
 export default cell

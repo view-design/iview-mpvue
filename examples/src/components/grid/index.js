@@ -1,3 +1,3 @@
-import grid from 'grid.vue'
+import grid from './grid.vue'
 
 export default grid

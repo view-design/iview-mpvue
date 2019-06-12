@@ -24,22 +24,22 @@
       <i-cell title="自定义文字说明">
         <i-rate 
           @change="onChange2" 
-          :value="starIndex2">
-          {{starIndex2}}星
+          :value="starIndex2"
+          show-text="星">
         </i-rate>
       </i-cell>
       <i-cell title="手势touch选择星">
         <i-rate 
           @change="onChange3" 
-          :value="starIndex3">
-          {{starIndex3}}星
+          :value="starIndex3"
+          show-text="星">
         </i-rate>
       </i-cell>
       <i-cell title="禁用点击和手势选择星">
         <i-rate 
           :disabled="true"
-          :value="starIndex4">
-          {{starIndex4}}星
+          :value="starIndex4"
+          show-text="星">
         </i-rate>
       </i-cell>
     </i-cell-group>
@@ -66,16 +66,16 @@ export default {
   },
   methods: {
     onChange1(e) {
-
+      this.starIndex1 = e.index
     },
     onChange2(e) {
-
+      this.starIndex2 = e.index
     },
     onChange3(e) {
-
+      this.starIndex3 = e.index
     },
     onChange5(e) {
-      
+      this.starIndex5 = e.index
     }
   }
 }

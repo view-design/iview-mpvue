@@ -1,3 +1,3 @@
-import countDown from 'countDown.vue'
+import countDown from './countDown.vue'
 
 export default countDown

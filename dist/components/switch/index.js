@@ -1,3 +1,3 @@
-import iswitch from 'switch.vue'
+import iswitch from './switch.vue'
 
 export default iswitch

@@ -1,3 +1,3 @@
-import row from 'row.vue'
+import row from './row.vue'
 
 export default row

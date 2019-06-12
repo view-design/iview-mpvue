@@ -1,12 +1,12 @@
 <p align="center">
     <a href="https://weapp.iviewui.com">
-        <img width="200" src="https://file.iviewui.com/weapp-logo.svg">
+        <img width="200" src="http://mpvue.com/assets/logo.png">
     </a>
 </p>
 
-# iView Weapp
+# iView mpvue
 
-### 一套高质量的微信小程序 UI 组件库
+### 一套高质量的小程序 UI 组件库
 
 ## 文档
 [https://weapp.iviewui.com](https://weapp.iviewui.com)

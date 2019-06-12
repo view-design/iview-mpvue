@@ -1,3 +1,3 @@
-import col from 'col.vue'
+import col from './col.vue'
 
 export default col

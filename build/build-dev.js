@@ -14,7 +14,9 @@ gulp.task('compile-css', done => {
     .pipe(
       through2.obj(function (file, encoding, next) {
         this.push(file.clone())
-        if (file.path.match(/(\/|\\)style(\/|\\)(.*)\.less$/)) {
+        if (file.path.match(/(\/|\\)style(\/|\\)(.*)\.less$/)
+          || file.path.match(/(\/|\\)style\.less$/)
+        ) {
           transformLess(file.path)
             .then(css => {
               file.contents = Buffer.from(css)
@@ -42,8 +44,7 @@ gulp.task('compile-js', () => {
       through2.obj(function (file, encoding, next) {
         this.push(file.clone())
         if (
-          file.path.match(/(\/|\\)style(\/|\\)index\.js/) ||
-          file.path.match(/(\/|\\)src(\/|\\)index\.js/)
+          file.path.match(/(\/|\\)style(\/|\\)index\.js/)
         ) {
           const content = file.contents.toString(encoding)
           file.contents = Buffer.from(cssInjection(content))

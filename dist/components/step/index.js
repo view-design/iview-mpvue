@@ -1,3 +1,3 @@
-import step from 'step.vue'
+import step from './step.vue'
 
 export default step
