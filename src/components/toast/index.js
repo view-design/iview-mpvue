@@ -1,3 +1,3 @@
-import toast from 'toast.vue'
+import toast from './toast.vue'
 
 export default toast

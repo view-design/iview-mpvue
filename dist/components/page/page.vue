@@ -1,9 +1,14 @@
 <template>
   <div class="i-page" :class="iClass">
     <div class="i-page-prev" v-if="mode === 'button'">
-      <i-button i-class="i-page-button" type="ghost" @click="handlePrev" :disabled="current === 1">
+      <button
+        class="i-btn i-btn-ghost i-page-button"
+        :class="[current == 1 ? 'i-btn-disabled' : '']"
+        @click="handlePrev"
+        hover-start-time="20"
+        hover-stay-time="70">
         <slot name="prev"></slot>
-      </i-button>
+      </button>
     </div>
     <div class="i-page-number" v-if="mode !== 'pointer' && !simple">
       <div class="i-page-number-current">{{current}}</div>/{{total}}
@@ -12,9 +17,14 @@
       <div class="i-page-pointer-dot" :class="{'current': (index + 1) === current}" v-for="(item, index) in totalNumber" :key="index"></div>
     </div>
     <div class="i-page-next" v-if="mode === 'button'">
-      <i-button i-class="i-page-button" type="ghost" @click="handleNext" :disabled="current == total">
+      <button
+        class="i-btn i-btn-ghost i-page-button"
+        :class="[current == total ? 'i-btn-disabled' : '']"
+        @click="handleNext"
+        hover-start-time="20"
+        hover-stay-time="70">
         <slot name="next"></slot>
-      </i-button>
+      </button>
     </div>
   </div>
 </template>
@@ -55,9 +65,11 @@ export default {
   },
   methods: {
     handlePrev () {
+      if (this.current == 1) return
       this.handleChange('prev');
     },
     handleNext () {
+      if (this.current == this.total) return
       this.handleChange('next');
     },
     handleChange (type) {

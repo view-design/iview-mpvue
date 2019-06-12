@@ -1,3 +1,3 @@
-import gridItem from 'grid-item.vue'
+import gridItem from './grid-item.vue'
 
 export default gridItem

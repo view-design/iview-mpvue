@@ -1,3 +1,3 @@
-import spin from 'spin.vue'
+import spin from './spin.vue'
 
 export default spin

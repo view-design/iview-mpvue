@@ -2,7 +2,7 @@
   "name": "iview-mpvue",
   "version": "1.0.0",
   "description": "高质量小程序 UI 组件库",
-  "main": "app.js",
+  "main": "./dist/index.js",
   "directories": {
     "example": "example"
   },
@@ -14,17 +14,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:iview/iview-weapp.git"
+    "url": "git+ssh://git@github.com:iview/iview-mpvue.git"
   },
   "author": "Aresn, hucq, Dewyzee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iview/iview-weapp/issues"
+    "url": "https://github.com/iview/iview-mpvue/issues"
   },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/iview/iview-weapp",
+  "homepage": "https://github.com/iview/iview-mpvue",
   "devDependencies": {
     "autoprefixer": "^9.5.0",
     "babel-eslint": "^10.0.1",

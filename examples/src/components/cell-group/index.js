@@ -1,3 +1,3 @@
-import cellGroup from 'cell-group.vue'
+import cellGroup from './cell-group.vue'
 
 export default cellGroup

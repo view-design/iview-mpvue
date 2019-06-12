@@ -1,3 +1,3 @@
-import gridIcon from 'grid-icon.vue'
+import gridIcon from './grid-icon.vue'
 
 export default gridIcon

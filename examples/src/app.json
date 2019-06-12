@@ -36,7 +36,8 @@
     "pages/radio/main",
     "pages/checkbox/main",
     "pages/switch/main",
-    "pages/rate/main"],
+    "pages/rate/main",
+    "pages/input-number/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
