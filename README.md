@@ -14,7 +14,7 @@
 ## 体验
 使用微信扫一扫体验小程序组件示例
 
-<img width="200" src="https://raw.githubusercontent.com/TalkingData/iview-weapp/master/assets/code.jpg">
+<img width="200" src="https://github.com/iview/iview-mpvue/blob/master/assets/wechat-mina.jpg?raw=true">
 
 ## 快速上手
 ### 使用之前
