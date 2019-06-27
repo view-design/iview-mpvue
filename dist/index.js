@@ -110,7 +110,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 const API = {
-  version: '1.0.1',
+  version: '1.0.2',
   install,
   ...components
 }
