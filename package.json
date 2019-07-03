@@ -1,6 +1,6 @@
 {
   "name": "iview-mpvue",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "高质量小程序 UI 组件库",
   "main": "./dist/index.js",
   "directories": {
@@ -26,10 +26,12 @@
   ],
   "homepage": "https://github.com/iview/iview-mpvue",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
     "autoprefixer": "^9.5.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-less": "^4.0.0",
     "gulp-rename": "^1.2.2",
@@ -41,6 +43,11 @@
     "postcss": "^7.0.14",
     "rimraf": "^2.6.3",
     "rucksack-css": "^1.0.2",
-    "through2": "^3.0.1"
+    "through2": "^3.0.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "dependencies": {
+    
   }
 }

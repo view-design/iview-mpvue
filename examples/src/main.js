@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 
-import iview from './index'
-Vue.use(iview)
-
+console.log(Vue)
 Vue.config.productionTip = false
 App.mpType = 'app'
 

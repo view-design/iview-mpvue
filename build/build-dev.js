@@ -6,6 +6,7 @@ const path = require('path')
 const through2 = require('through2')
 const gulp = require('gulp')
 const destDir = getProjectPath('dist')
+const babel = require("gulp-babel")
 const exampleDestDir = getProjectPath('examples/src')
 
 gulp.task('compile-css', done => {

@@ -21,3 +21,4 @@ yarn-error.log
 test/unit/coverage
 examples/project.config.json
 .vscode
+.package-lock.json

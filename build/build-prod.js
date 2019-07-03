@@ -6,6 +6,7 @@ const merge2 = require("merge2");
 const through2 = require("through2");
 const gulp = require("gulp");
 const rimraf = require("rimraf");
+const babel = require("gulp-babel");
 const destDir = getProjectPath("dist");
 
 function compile() {
@@ -42,6 +43,12 @@ function compile() {
     .pipe(gulp.dest(path.join(destDir, "components")));
   const scripts = gulp
     .src(["../src/**/*.js"])
+    .pipe(babel({
+      "plugins": ["@babel/plugin-proposal-object-rest-spread"],
+      "presets": [
+        "@babel/preset-env"
+      ]
+    }))
     .pipe(
       through2.obj(function(file, encoding, next) {
         this.push(file.clone());
