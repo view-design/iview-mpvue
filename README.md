@@ -25,8 +25,8 @@
 
 1. 添加需要的组件。按照Vue的自定义组件使用方式引入并注册：
 ```javasvript
-import button from '../../dist/components/button/button'
 <script>
+    import button from '../../dist/components/button/button'
     export default {
         components: {
             'i-button': button
