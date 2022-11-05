@@ -30,7 +30,7 @@
     "autoprefixer": "^9.5.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^3.19.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-less": "^4.0.0",
